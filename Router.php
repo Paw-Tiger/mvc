@@ -34,7 +34,6 @@ class Router
         $this->controller = array_shift($this->pathParts) ?: 'index';
 
         $parts = array_merge(explode('-', $this->controller), ['Controller']);
-
         $this->controller = '\application\controllers\\';
         foreach ($parts as $part) {
             $this->controller .= ucfirst(strtolower($part));

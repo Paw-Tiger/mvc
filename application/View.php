@@ -27,6 +27,7 @@ class View{
         $view =  sprintf('%s/%s.php',$this->pathTemplate,$this->getModel()->getTemplate());
         $layout =  sprintf('%s/%s.php',$this->pathLayout,$this->getModel()->getLayout());
 
+
         if(!file_exists($view)){
             throw  new Exception('View not exist');
         }elseif (!file_exists($layout)){

@@ -12,5 +12,11 @@ class IndexController extends Controller
         $this->getModel()->setTemplate('index/index');
         $this->getModel()->setData('This index controller');
     }
+    public function action404()
+    {
+        $this->getModel()->setTemplate('index/index');
+        $this->getModel()->setData('This 404 controller');
+    }
+
 
 }
